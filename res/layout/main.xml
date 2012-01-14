@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" android:text="Ingrese el primer valor:" android:id="@+id/tv1"/>
+<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/et1">
+    <requestFocus></requestFocus>
+</EditText>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ingrese el segundo valor:" android:id="@+id/tv2"></TextView>
+<EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/et2"></EditText>
+<RadioGroup android:id="@+id/radioGroup1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:id="@+id/r1" android:text="SUMAR"></RadioButton>
+    <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/r2" android:text="RESTAR"></RadioButton>
+    <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/r3" android:text="MULTIPLICAR "></RadioButton>
+    <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/r4" android:text="DIVIDIR"></RadioButton>
+</RadioGroup>
+<Button android:id="@+id/button1" android:layout_width="wrap_content" android:text="OPERAR" android:layout_height="wrap_content" android:onClick="operar"></Button>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tv3" android:text="resultado"></TextView>
+</LinearLayout>
